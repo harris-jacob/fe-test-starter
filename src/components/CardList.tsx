@@ -1,3 +1,4 @@
+import React from "react";
 import styled from "styled-components";
 import theme from "../theme";
 import { User } from "../hooks/useUsers";
@@ -17,7 +18,7 @@ export const CardList = ({ users }: { users: Array<User> }): JSX.Element => {
   return (
     <Grid>
       {users.map((v) => (
-        <FlipCard key={v.uid} front={createFront(v)} back={createBack(v)} />
+        <FlipCard front={createFront(v)} back={createBack(v)} />
       ))}
     </Grid>
   );

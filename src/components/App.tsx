@@ -1,3 +1,4 @@
+import React from "react";
 import { Container } from "./generic/Container";
 import { H4 } from "./generic/typography";
 import { CardList } from "./CardList";
